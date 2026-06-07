@@ -12,17 +12,18 @@ public class DeleteTaskDemo {
             System.out.println(" "+t);
         }
 
-        String taskToDelete="Buy groceries";
-        //boolean taskFound=false;
+        String taskToDelete="Go to gym";
+        boolean taskFound=false;
         for(int i=0;i<tasks.size();i++){
             if(tasks.get(i).equals(taskToDelete)){
                 tasks.remove(taskToDelete);
-               // taskFound=true;
+               taskFound=true;
                 System.out.println(taskToDelete+" Removed SUCCESSFULLY...");
                 break;
-            }else{
-                System.out.println(taskToDelete+" NOT Found...");
             }
+        }
+        if(!taskFound){
+            System.out.println(taskToDelete+" NOT Found, NO Deletion Performed...");
         }
 
         System.out.println("*** Show Available Tasks After Deleting ***");
