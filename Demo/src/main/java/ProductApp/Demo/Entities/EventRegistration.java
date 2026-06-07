@@ -9,5 +9,19 @@ public class EventRegistration {
         this.attendeeName = attendeeName;
     }
 
+    public String getRegistrationId() {
+        return registrationId;
+    }
 
+    public void setRegistrationId(String registrationId) {
+        this.registrationId = registrationId;
+    }
+
+    public String getAttendeeName() {
+        return attendeeName;
+    }
+
+    public void setAttendeeName(String attendeeName) {
+        this.attendeeName = attendeeName;
+    }
 }
