@@ -1,6 +1,4 @@
-package ProductApp.Demo.Controllers;
-
-import ProductApp.Demo.Entities.LibraryMember;
+package ProductApp.Demo.Entities;
 
 import java.util.ArrayList;
 
