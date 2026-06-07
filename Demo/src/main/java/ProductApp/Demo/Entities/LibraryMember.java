@@ -1,4 +1,4 @@
-package ProductApp.Demo;
+package ProductApp.Demo.Entities;
 
 public class LibraryMember {
     private int memberId;
