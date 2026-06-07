@@ -1,9 +1,14 @@
 package ProductApp.Demo.Controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestParam;
+import ProductApp.Demo.Services.ProductService;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class ProductController {
+    ProductService productService=new ProductService();
+
+    @DeleteMapping("/products/{id}")
+    public String deleteProduct(@PathVariable int id){
+        return productService.deleteProductById(id);
+    }
 }
