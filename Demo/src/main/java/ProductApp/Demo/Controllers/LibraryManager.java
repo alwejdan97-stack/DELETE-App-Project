@@ -10,4 +10,8 @@ public class LibraryManager {
     public initializeMembers(){
 
     }
+    public ArrayList<LibraryMember> addMember(LibraryMember member){}
+    public void displayMembers() {}
+
+    public ArrayList<LibraryMember> deleteMemberById(String memberId){}
 }
