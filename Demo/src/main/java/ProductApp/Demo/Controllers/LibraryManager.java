@@ -15,13 +15,14 @@ public class LibraryManager {
     }
     public void addMember(LibraryMember member){
         members.add(member);
+        System.out.println(member+" Add SUCCESSFULLY...");
     }
     public void displayMembers(){
         if(members.isEmpty()){
             System.out.println("NO Registered Member...");
         }
+        System.out.println("*** Show Available Members ***");
         for(LibraryMember lm: members){
-            System.out.println("*** Show Available Members ***");
             System.out.println("Member ID: "+lm.getMemberId()+" | Member Name: "+lm.getFullName()+" | Member Ship Type: "+lm.getMembershipType());
         }
     }
