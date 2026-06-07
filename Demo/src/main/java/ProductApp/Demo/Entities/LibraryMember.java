@@ -1,21 +1,21 @@
 package ProductApp.Demo.Entities;
 
 public class LibraryMember {
-    private int memberId;
+    private String memberId;
     private String fullName;
     private String membershipType;
 
-    public LibraryMember(int memberId, String fullName, String membershipType) {
+    public LibraryMember(String memberId, String fullName, String membershipType) {
         this.memberId = memberId;
         this.fullName = fullName;
         this.membershipType = membershipType;
     }
 
-    public int getMemberId() {
+    public String getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(int memberId) {
+    public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
 
