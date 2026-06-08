@@ -30,7 +30,7 @@ public class RegistrationService {
         }
         return "Deletion COMPLETED...\n"+
                 "Total Request: "+ ids.size()+"\n"+
-                "Total of Successful deleted: "+deletedIds.size()+"\n"+
+                "Total Successful Deleted: "+deletedIds.size()+"\n"+
                 "Deleted IDs: "+deletedIds.toString().replace("[","").replace("]","")+"\n"+
                 "NOT Found IDs: "+notFoundIds.toString().replace("[","").replace("]","");
     }

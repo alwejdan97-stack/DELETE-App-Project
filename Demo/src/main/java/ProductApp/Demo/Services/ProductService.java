@@ -21,7 +21,7 @@ public class ProductService {
         Product productoToDelete=productMap.get(productId);
         String deletedName=productoToDelete.getProductName();
         productMap.remove(productId);
-        return "Product Deleted SUCCESSFULLT...\n"+
+        return "Product Deleted SUCCESSFULLY...\n"+
                 "Product ID: "+productId+"\n"+
                 "Product Name: "+deletedName;
     }

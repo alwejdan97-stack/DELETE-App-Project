@@ -1,6 +1,5 @@
 package ProductApp.Demo.Services;
 
-import ProductApp.Demo.Controllers.LibraryManager;
 import ProductApp.Demo.Entities.LibraryMember;
 
 public class Main {
