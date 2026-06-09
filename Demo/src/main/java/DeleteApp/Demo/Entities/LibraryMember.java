@@ -1,4 +1,4 @@
-package ProductApp.Demo.Entities;
+package DeleteApp.Demo.Entities;
 
 public class LibraryMember {
     private String memberId;
@@ -24,6 +24,7 @@ public class LibraryMember {
     }
 
     public void setFullName(String fullName) {
+
         this.fullName = fullName;
     }
 

@@ -1,4 +1,4 @@
-package ProductApp.Demo.Entities;
+package DeleteApp.Demo.Entities;
 
 public class EventRegistration {
     private String registrationId;

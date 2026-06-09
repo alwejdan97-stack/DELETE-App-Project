@@ -1,14 +1,15 @@
-package ProductApp.Demo.Services;
+package DeleteApp.Demo.Services;
 
-import ProductApp.Demo.Entities.LibraryMember;
+import DeleteApp.Demo.Entities.LibraryMember;
 
 public class Main {
     public static void main(String[] args){
         LibraryManager manager=new LibraryManager();
+
         manager.initializeMembers();
         manager.addMember(new LibraryMember("M5-05","Nasser","Premium"));
         manager.displayMembers();
-        manager.deleteMemberById("M4-04");
+        manager.deleteMemberByObject(new LibraryMember("M5-05","Nasser","Premium"));
         manager.displayMembers();
     }
 }

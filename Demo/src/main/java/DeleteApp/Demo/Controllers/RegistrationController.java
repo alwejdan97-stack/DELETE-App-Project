@@ -1,6 +1,6 @@
-package ProductApp.Demo.Controllers;
+package DeleteApp.Demo.Controllers;
 
-import ProductApp.Demo.Services.RegistrationService;
+import DeleteApp.Demo.Services.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

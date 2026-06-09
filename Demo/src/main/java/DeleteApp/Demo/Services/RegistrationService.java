@@ -1,6 +1,6 @@
-package ProductApp.Demo.Services;
+package DeleteApp.Demo.Services;
 
-import ProductApp.Demo.Entities.EventRegistration;
+import DeleteApp.Demo.Entities.EventRegistration;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

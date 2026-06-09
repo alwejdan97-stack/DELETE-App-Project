@@ -1,6 +1,6 @@
-package ProductApp.Demo.Services;
+package DeleteApp.Demo.Services;
 
-import ProductApp.Demo.Entities.Product;
+import DeleteApp.Demo.Entities.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

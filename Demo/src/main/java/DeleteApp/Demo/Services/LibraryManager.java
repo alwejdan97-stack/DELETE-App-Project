@@ -1,8 +1,9 @@
-package ProductApp.Demo.Services;
+package DeleteApp.Demo.Services;
 
-import ProductApp.Demo.Entities.LibraryMember;
+import DeleteApp.Demo.Entities.LibraryMember;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Member;
 import java.util.ArrayList;
 
 @Service
@@ -31,12 +32,12 @@ public class LibraryManager {
         return members;
     }
 
-    public ArrayList<LibraryMember> deleteMemberById(String memberId){
+    public ArrayList<LibraryMember> deleteMemberByObject(LibraryMember memberToDelete){
         boolean memberFound=false;
         for(LibraryMember lm:members){
-            if(lm.getMemberId().equals(memberId)){
-                members.remove(memberId);
-                System.out.println(memberId+" Removed SUCCESSFULLY...");
+            if(lm.getMemberId().equals(memberToDelete)){
+                members.remove(memberToDelete);
+                System.out.println(memberToDelete+" Removed SUCCESSFULLY...");
                 memberFound=true;
                 break;
             }

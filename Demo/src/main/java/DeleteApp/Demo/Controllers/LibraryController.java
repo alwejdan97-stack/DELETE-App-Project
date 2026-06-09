@@ -1,10 +1,11 @@
-package ProductApp.Demo.Controllers;
+package DeleteApp.Demo.Controllers;
 
-import ProductApp.Demo.Entities.LibraryMember;
-import ProductApp.Demo.Services.LibraryManager;
+import DeleteApp.Demo.Entities.LibraryMember;
+import DeleteApp.Demo.Services.LibraryManager;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.lang.reflect.Member;
 import java.util.ArrayList;
 
 @RestController
@@ -25,7 +26,7 @@ public class LibraryController {
     }
 
     @DeleteMapping("/{memberId}")
-    public ArrayList<LibraryMember> deleteMemberById(String memberId){
-        return libraryManager.deleteMemberById(memberId);
+    public ArrayList<LibraryMember> deleteMemberById(LibraryMember memberToDelete){
+        return libraryManager.deleteMemberByObject(memberToDelete);
     }
 }
