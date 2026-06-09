@@ -1,9 +1,11 @@
 package ProductApp.Demo.Services;
 
 import ProductApp.Demo.Entities.LibraryMember;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
+@Service
 public class LibraryManager {
     ArrayList<LibraryMember> members=new ArrayList<>();
 
@@ -13,11 +15,12 @@ public class LibraryManager {
         members.add(new LibraryMember("M3-03","Ahmed","Premium"));
 
     }
-    public void addMember(LibraryMember member){
+    public ArrayList<LibraryMember> addMember(LibraryMember member){
         members.add(member);
         System.out.println(member+" Add SUCCESSFULLY...");
+        return members;
     }
-    public void displayMembers(){
+    public ArrayList<LibraryMember> displayMembers(){
         if(members.isEmpty()){
             System.out.println("NO Registered Member...");
         }
@@ -25,6 +28,7 @@ public class LibraryManager {
         for(LibraryMember lm: members){
             System.out.println("Member ID: "+lm.getMemberId()+" | Member Name: "+lm.getFullName()+" | Member Ship Type: "+lm.getMembershipType());
         }
+        return members;
     }
 
     public ArrayList<LibraryMember> deleteMemberById(String memberId){

@@ -1,9 +1,11 @@
 package ProductApp.Demo.Services;
 
 import ProductApp.Demo.Entities.Product;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 
+@Service
 public class ProductService {
     HashMap<Integer, Product> productMap=new HashMap<>();
 

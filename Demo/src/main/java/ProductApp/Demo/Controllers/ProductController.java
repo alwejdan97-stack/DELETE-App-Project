@@ -1,11 +1,13 @@
 package ProductApp.Demo.Controllers;
 
 import ProductApp.Demo.Services.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ProductController {
-    ProductService productService=new ProductService();
+    @Autowired
+    ProductService productService;
 
     @DeleteMapping("/products/{id}")
     public String deleteProduct(@PathVariable int id){
